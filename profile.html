@@ -39,6 +39,9 @@ textarea {
   padding: 10px;
 
 }
+tr {
+  cursor: pointer;
+}
     </style>
 </head>
 
@@ -129,7 +132,7 @@ textarea {
         </div>
     </form>
     <!--Update email-->
-             <form method="post" id="updateemailform">
+         <form method="post" id="updateemailform">
         <div class="modal" id="updateemail" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -138,19 +141,19 @@ textarea {
                             &times;
                         </button>
                         <h4 id="myModalLabel">
-                    Enter new email: 
+                   Enter New Email: 
                   </h4>
                     </div>
                     <div class="modal-body">
                         <!--login message-->
                         <div id="loginmessage"></div>
                         <div class="form-group">
-                            <label for="loginemail">Email:</label>
+                            <label for="loginemail">Email</label>
                             <input class="form-control" type="email" name="email" id="email"  maxlength="50" value="email value">
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <input class="btn green" name="updateemail" type="submit" value="submit">
+                        <input class="btn green" name="updateusername" type="submit" value="submit">
                         <button type="button" class="btn btn-default" data-dismiss="modal">
                             Cancel
                         </button>
@@ -159,10 +162,10 @@ textarea {
                 </div>
             </div>
         </div>
-    </form>
+    </form>    
     <!-- Update password -->
-        <form method="post" id="updateusernameform">
-        <div class="modal" id="updateusername" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <form method="post" id="updatepasswordform">
+        <div class="modal" id="updatepassword" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -170,15 +173,27 @@ textarea {
                             &times;
                         </button>
                         <h4 id="myModalLabel">
-                    Edit Username: 
+                    Enter Current and New Password: 
                   </h4>
                     </div>
                     <div class="modal-body">
                         <!--login message from PHP file-->
                         <div id="loginmessage"></div>
+                        <div id="loginmessage"></div>
                         <div class="form-group">
-                            <label for="loginemail">Username:</label>
-                            <input class="form-control" type="text" name="username" id="username"  maxlength="30" value="username value">
+                            <label for="currentpassword" class="sr-only">Current Password:</label>
+                            <input class="form-control" type="password" name="currentpassword" id="currentpassword"  maxlength="30" placeholder="Current Password">
+                        </div>
+
+                        <!--Choose a new password-->
+                        <div class="form-group">
+                            <label for="password" class="sr-only">Choose a Password:</label>
+                            <input class="form-control" type="password" name="password" id="password"  maxlength="30" placeholder="Choose a Password">
+                        </div>
+                        <!--Confirm Password-->
+                         <div class="form-group">
+                            <label for="password2" class="sr-only">Confirm Password:</label>
+                            <input class="form-control" type="password" name="password2" id="password2"  maxlength="30" placeholder="Confirm Password">
                         </div>
                     </div>
                     <div class="modal-footer">
