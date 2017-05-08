@@ -11,37 +11,24 @@
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <style>
-      /*Container*/
-#container {
- margin-top: 100px; 
-}
-
-/*Hide notepad, All Plans, and Done buttons*/
-/*#notePad,*/ #allPlans, #done {
-  display: none;
-}
-
-
-/*Adding styling to the logged in buttons*/
-.buttons {
- margin-bottom: 20px; 
-}
-
-/*Style text area where user will write plans*/
-textarea {
-  width: 100%;
-  max-width: 100%;
-  font-size: 16px;
-  line-height: 1.5em;
-  border-left-width: 20px;
-  border-color: #2f2b3d;
-  color: #2f2b3d;
-  background-color: #FBFFFF;
-  padding: 10px;
-}
-
-
-
+    /*Container*/
+    
+    #container {
+        margin-top: 100px;
+    }
+    /*Style text area where user will write plans*/
+    
+    textarea {
+        width: 100%;
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.5em;
+        border-left-width: 20px;
+        border-color: #2f2b3d;
+        color: #2f2b3d;
+        background-color: #FBFFFF;
+        padding: 10px;
+    }
     </style>
 </head>
 
@@ -65,39 +52,35 @@ textarea {
                 </ul>
                 <!--Login button pushed to the right-->
                 <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Logged in as <b>username</b></a></li>
+                    <li><a href="#">Logged in as <b>username</b></a></li>
                     <li><a href="#">Log out</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <!-- Container -->
     <div class="container" id="container">
-      <div class="row">
-        <div class="col-md-offset-3 col-md-6">
-          <div class="buttons">
-            <button id="addPlan" type="button" class="btn btn green btn-lg">Add Plan</button>
-
-            <button id="edit" type="button" class="btn btn green btn-lg pull-right">Edit</button>
-
-            <button id="done" type="button" class="btn btn-primary btn-lg pull-right">Done</button>
-
-            <button id="allPlans" type="button" class="btn btn green btn-lg">All Plans</button>
-          </div>
-          <!--Notepad to write plans on-->
-          <div id="notePad">
-            <textarea rows="10"></textarea>
-          </div>
-          <div id="plans" class="plans">
-          <!-- Ajax call to file -->
-          
-            
-          </div>
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+                <div class="form-group">
+                    <label for="planTitle">Title:</label>
+                    <input class="form-control" type="text" name="title" id="title" maxlength="50" placeholder="Ex: Dr. Appointment">
+                </div>
+                <div class="form-group">
+                    <label for="planTime">Time:</label>
+                    <input class="form-control" type="text" name="time" id="time" maxlength="15" placeholder="Ex: 12:30 p.m.">
+                </div>
+                <!--  Notepad to write plans on -->
+                <div id="notePad">
+                    <label for="planDetails">Details:</label>
+                    <textarea rows="10"></textarea>
+                </div>
+                <div id="plans" class="plans">
+                    <button id="planSubmit" type="button" class="btn btn green btn-lg pull-right" type="submit" value="submit">Submit</button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    
     <!--Footer-->
     <div class="footer">
         <div class="container">
@@ -112,4 +95,3 @@ textarea {
 </body>
 
 </html>
-
