@@ -8,5 +8,15 @@
     "start": "node server.js"
   },
   "author": "kyle",
-  "license": "ISC"
+   "license": "ISC",
+   "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "fs": "0.0.1-security",
+    "mysql": "^2.13.0",
+    "path": "^0.12.7",
+    "routes": "^2.1.0",
+    "sequelize": "^3.30.4",
+    "twilio": "^3.0.0"
+  }
 }
