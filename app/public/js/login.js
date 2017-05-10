@@ -6,8 +6,8 @@
 $("#loginBtn").on("click", function() {
 
   // save the character they typed into the character-search input
-  var searchUser = $("#loginEmail").val().trim();
-  var passwordCheck= $("#loginEmail").val().trim();
+  var searchUser = $("#loginemail").val().trim();
+  var passwordCheck= $("#loginpassword").val().trim();
 
   // replace any spaces between that character with no space
   // (effectively deleting the spaces). Make the string lowercase
