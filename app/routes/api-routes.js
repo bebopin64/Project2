@@ -4,7 +4,7 @@
 
 // Dependencies
 // =============================================================
-var User = require("../models/users.js");
+var User = require("../models/user.js");
 var Plan = require("../models/plans.js");
 
 // Routes

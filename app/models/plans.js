@@ -13,9 +13,9 @@ var Plan = sequelize.define("plan", {
 
   title: Sequelize.STRING,
 
-  time: Sequelize.DATE
+  time: Sequelize.DATE,
 
-  details: Sequelize.STRING,
+  details: Sequelize.STRING
 });
 
 // Syncs with DB
