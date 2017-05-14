@@ -56,6 +56,7 @@ body {
       text-align: center;
     }
 
+
 /*Navigation Bar*/
 .navbar-custom, .footer {
   background-color: #2f2b3d;
@@ -171,5 +172,4 @@ body {
 .navbar-custom .navbar-link:hover {
   color: #a9a2bf;
 }
-
 
